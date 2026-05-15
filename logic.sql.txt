@@ -1,0 +1,12 @@
+-- Триггер: если товара больше 100, цена падает на 10% автоматически
+CREATE TRIGGER trg_ApplyBulkDiscount
+ON Inventory
+AFTER UPDATE
+AS
+BEGIN
+    UPDATE Inventory
+    SET DiscountPrice = BasePrice * 0.9
+    FROM Inventory i
+    INNER JOIN inserted ins ON i.ItemID = ins.ItemID
+    WHERE ins.Quantity > 100;
+END;
