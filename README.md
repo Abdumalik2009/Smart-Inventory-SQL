@@ -8,3 +8,6 @@
 *   **Контроль данных:** Использованы продвинутые триггеры SQL Server.
 
 **Технологии:** T-SQL, SQL Server Management Studio.
+
+<img width="993" height="1222" alt="Снимок экрана 2026-05-15 175305" src="https://github.com/user-attachments/assets/5f9e9482-5970-4939-b1e1-14793694f0b9" />
+
